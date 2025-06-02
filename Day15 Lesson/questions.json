@@ -1,0 +1,32 @@
+[
+    {
+        "question": "What is the capital of France?",
+        "options": [
+            "Paris",
+            "London",
+            "Berlin",
+            "Madrid"
+        ],
+        "correct_answer": 1
+    },
+    {
+        "question": "What is the largest planet in our solar system?",
+        "options": [
+            "Earth",
+            "Jupiter",
+            "Mars",
+            "Venus"
+        ],
+        "correct_answer": 2
+    },
+    {
+        "question": "What is the chemical symbol for water?",
+        "options": [
+            "H2O",
+            "CO2",
+            "O2",
+            "N2"
+        ],
+        "correct_answer": 1
+    }
+]
