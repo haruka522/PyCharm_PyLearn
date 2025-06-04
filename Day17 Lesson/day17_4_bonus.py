@@ -24,12 +24,20 @@ while True:
     print(event)
     print(values)
 
-    filepath = values['files'].split(';')
-    folder = values['folder']
-    make_archive(filepath, folder)
+    if event == "Compress":
+        # check if files are selected
+        if not values['files']:
+            output_label.update(value="Error: No files selected.")
+            continue
+        if not values['folder']:
+            output_label.update(value="Error: No folder selected.")
+            continue
+        filepath = values['files'].split(';')
+        folder = values['folder']
+        make_archive(filepath, folder)
 
-    # both lines work
-    # window["message"].update(value="Compression completed.")
-    output_label.update(value="Compression completed.")
+        # both lines work
+        # window["message"].update(value="Compression completed.")
+        output_label.update(value="Compression completed.")
 
 window.close()
