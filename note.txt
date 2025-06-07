@@ -1,0 +1,14 @@
+----- after clone the repo, sometime you need to install some packages manually -----
+pip install -r requirements.txt
+
+
+----- if you want to run the web app -----
+stramlit run filename.py
+
+if the web app is running, you can access it by going to http://localhost:8501/
+if the web_app file is in the folder, you need to run the following command in the terminal:
+
+stramlit run "folderName/filename.py"
+
+----- to generate the requirements.txt file -----
+pip freeze > requirements.txt
